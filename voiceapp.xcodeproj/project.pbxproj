@@ -13,6 +13,8 @@
 		AADAEBE42A4022820004F3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADAEBE22A4022820004F3EF /* Main.storyboard */; };
 		AADAEBE62A4022830004F3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADAEBE52A4022830004F3EF /* Assets.xcassets */; };
 		AADAEBE92A4022830004F3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADAEBE72A4022830004F3EF /* LaunchScreen.storyboard */; };
+		AADAEBF12A402A750004F3EF /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADAEBF02A402A750004F3EF /* mainPage.swift */; };
+		AADAEBF32A402B3B0004F3EF /* CollectionView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADAEBF22A402B3B0004F3EF /* CollectionView1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AADAEBE52A4022830004F3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADAEBE82A4022830004F3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AADAEBEA2A4022830004F3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AADAEBF02A402A750004F3EF /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
+		AADAEBF22A402B3B0004F3EF /* CollectionView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		AADAEBD02A4022820004F3EF = {
 			isa = PBXGroup;
 			children = (
+				AADAEBF02A402A750004F3EF /* mainPage.swift */,
 				AADAEBDB2A4022820004F3EF /* voiceapp */,
 				AADAEBDA2A4022820004F3EF /* Products */,
 			);
@@ -60,6 +65,7 @@
 				AADAEBDE2A4022820004F3EF /* SceneDelegate.swift */,
 				AADAEBE02A4022820004F3EF /* ViewController.swift */,
 				AADAEBE22A4022820004F3EF /* Main.storyboard */,
+				AADAEBF22A402B3B0004F3EF /* CollectionView1.swift */,
 				AADAEBE52A4022830004F3EF /* Assets.xcassets */,
 				AADAEBE72A4022830004F3EF /* LaunchScreen.storyboard */,
 				AADAEBEA2A4022830004F3EF /* Info.plist */,
@@ -141,6 +147,8 @@
 				AADAEBE12A4022820004F3EF /* ViewController.swift in Sources */,
 				AADAEBDD2A4022820004F3EF /* AppDelegate.swift in Sources */,
 				AADAEBDF2A4022820004F3EF /* SceneDelegate.swift in Sources */,
+				AADAEBF32A402B3B0004F3EF /* CollectionView1.swift in Sources */,
+				AADAEBF12A402A750004F3EF /* mainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

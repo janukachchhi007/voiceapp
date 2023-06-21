@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1ov-lW-7cL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cEY-eQ-zdx">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="kidswallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="hHL-Tm-eOV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="b 1" translatesAutoresizingMaskIntoConstraints="NO" id="hHL-Tm-eOV">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqW-Ve-hwB">
-                                <rect key="frame" x="97" y="606" width="199" height="46"/>
+                                <rect key="frame" x="97" y="718" width="199" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.30327910180000001" green="0.5457239747" blue="0.79943448309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.04920148104429245" green="0.84260600805282593" blue="0.89571064710617065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Play">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
@@ -32,23 +32,30 @@
                                     <action selector="playButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a65-at-tVH"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bVL-US-PbF">
+                                <rect key="frame" x="16" y="677" width="361" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.04920148104429245" green="0.84260600805282593" blue="0.89571064710617065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="hHL-Tm-eOV" secondAttribute="bottom" id="Rmq-ba-VM0"/>
-                            <constraint firstAttribute="trailing" secondItem="hHL-Tm-eOV" secondAttribute="trailing" id="eWc-i4-Bb1"/>
-                            <constraint firstItem="hHL-Tm-eOV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jrZ-LF-4Wg"/>
-                            <constraint firstItem="hHL-Tm-eOV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yxZ-dI-DUN"/>
+                            <constraint firstItem="hHL-Tm-eOV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LYW-Lx-yHO"/>
+                            <constraint firstAttribute="bottom" secondItem="hHL-Tm-eOV" secondAttribute="bottom" id="RCo-MT-WTH"/>
+                            <constraint firstItem="hHL-Tm-eOV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zfc-Ph-mgN"/>
+                            <constraint firstItem="hHL-Tm-eOV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bmW-lm-UW3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fK1-m4-o0T"/>
                     <connections>
                         <outlet property="playButton" destination="PqW-Ve-hwB" id="dpJ-Y5-xTh"/>
+                        <outlet property="progressBar" destination="bVL-US-PbF" id="Goi-4O-SCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1040.4580152671756" y="-27.464788732394368"/>
         </scene>
         <!--Main Page-->
         <scene sceneID="oLC-C7-9r6">
@@ -58,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="kidswallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="6ZF-tt-j4H">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="2dd50eba6691004e572de74e36956a88" translatesAutoresizingMaskIntoConstraints="NO" id="6ZF-tt-j4H">
                                 <rect key="frame" x="-16" y="-12" width="409" height="864"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jVE-a3-Im2">
@@ -121,11 +128,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyd-ik-9cI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1107.6335877862596" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="2034.3511450381679" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pcl-3d-Ht4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cEY-eQ-zdx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xmK-sc-Znd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sO5-ml-DNl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LoC-6W-zuj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
-        <image name="kidswallpaper" width="564" height="846"/>
+        <image name="2dd50eba6691004e572de74e36956a88" width="564" height="902"/>
+        <image name="b 1" width="564" height="846"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

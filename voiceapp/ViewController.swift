@@ -8,9 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var playButton: UIButton!
+    var time = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         playButton.layer.cornerRadius = 25
@@ -18,25 +20,28 @@ class ViewController: UIViewController {
         progressBar.progress = 0.0
         
     }
-
+    
+    
+    
+    
     @IBAction func playButtonAction(_ sender: Any) {
-        
-        var time = Timer()
         var a : Float = 0.0
-        time = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: { time in
-            a+=0.01
+        self.progressBar.progress = a
+        time = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true, block: { (time) in
+            a += 0.01
             self.progressBar.progress = a
             if self.progressBar.progress == 1.0
             {
-                self.progressBar.progress = 0.0
+                self.naviget()
+                self.time.invalidate()
+                
             }
         })
-        naviget()3.description
     }
     func naviget()
     {
-        let naviget = storyboard?.instantiateViewController(withIdentifier: "mainPage") as! mainPage
-            navigationController?.pushViewController(naviget, animated: true)
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "typesPage") as! typesPage
+        navigationController?.pushViewController(naviget, animated: true)
     }
 }
 

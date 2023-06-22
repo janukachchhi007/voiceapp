@@ -17,6 +17,7 @@ class mainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
     @IBOutlet weak var cv: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+       
 
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -27,6 +28,8 @@ class mainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
         let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionView1
         cell.nameLabel.text = alphabet[indexPath.row]
         cell.img.image = image[indexPath.row]
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -38,13 +41,16 @@ class mainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
         }
         else if indexPath.row == 1
         {
-            var myVoice = AVSpeechUtterance(string: "B for ball")
-            synth.speak(myVoice)
-            myVoice.rate = 0.3
+            voice(voice: "B for ball")
         }
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 230, height: 270)
+    func voice(voice:String)
+    {
+        var myVoice = AVSpeechUtterance(string: voice)
+        synth.speak(myVoice)
+        myVoice.rate = 0.3
     }
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 160, height: 195)
+    }
 }

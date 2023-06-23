@@ -17,6 +17,10 @@
 		AADAEBE92A4022830004F3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADAEBE72A4022830004F3EF /* LaunchScreen.storyboard */; };
 		AADAEBF12A402A750004F3EF /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADAEBF02A402A750004F3EF /* mainPage.swift */; };
 		AADAEBF32A402B3B0004F3EF /* CollectionView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADAEBF22A402B3B0004F3EF /* CollectionView1.swift */; };
+		AAE1617D2A45632400938C0C /* NumericPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1617C2A45632400938C0C /* NumericPage.swift */; };
+		AAE1617F2A4563AC00938C0C /* numericCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1617E2A4563AC00938C0C /* numericCollectionView.swift */; };
+		AAE161812A45823500938C0C /* colourPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE161802A45823500938C0C /* colourPage.swift */; };
+		AAE161832A4584B200938C0C /* colourCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE161822A4584B200938C0C /* colourCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		AADAEBEA2A4022830004F3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AADAEBF02A402A750004F3EF /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		AADAEBF22A402B3B0004F3EF /* CollectionView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView1.swift; sourceTree = "<group>"; };
+		AAE1617C2A45632400938C0C /* NumericPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericPage.swift; sourceTree = "<group>"; };
+		AAE1617E2A4563AC00938C0C /* numericCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numericCollectionView.swift; sourceTree = "<group>"; };
+		AAE161802A45823500938C0C /* colourPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colourPage.swift; sourceTree = "<group>"; };
+		AAE161822A4584B200938C0C /* colourCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colourCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 		AADAEBD02A4022820004F3EF = {
 			isa = PBXGroup;
 			children = (
+				AAE161802A45823500938C0C /* colourPage.swift */,
 				AA472AC62A44089100A547F9 /* typesPage.swift */,
 				AADAEBF02A402A750004F3EF /* mainPage.swift */,
 				AADAEBDB2A4022820004F3EF /* voiceapp */,
@@ -70,6 +79,9 @@
 				AADAEBDE2A4022820004F3EF /* SceneDelegate.swift */,
 				AADAEBE02A4022820004F3EF /* ViewController.swift */,
 				AADAEBE22A4022820004F3EF /* Main.storyboard */,
+				AAE161822A4584B200938C0C /* colourCollectionView.swift */,
+				AAE1617E2A4563AC00938C0C /* numericCollectionView.swift */,
+				AAE1617C2A45632400938C0C /* NumericPage.swift */,
 				AA472AC82A4411B900A547F9 /* TypesCollectionView.swift */,
 				AADAEBF22A402B3B0004F3EF /* CollectionView1.swift */,
 				AADAEBE52A4022830004F3EF /* Assets.xcassets */,
@@ -150,11 +162,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE161812A45823500938C0C /* colourPage.swift in Sources */,
 				AADAEBE12A4022820004F3EF /* ViewController.swift in Sources */,
 				AADAEBDD2A4022820004F3EF /* AppDelegate.swift in Sources */,
 				AADAEBDF2A4022820004F3EF /* SceneDelegate.swift in Sources */,
+				AAE161832A4584B200938C0C /* colourCollectionView.swift in Sources */,
 				AADAEBF32A402B3B0004F3EF /* CollectionView1.swift in Sources */,
+				AAE1617D2A45632400938C0C /* NumericPage.swift in Sources */,
 				AA472AC72A44089100A547F9 /* typesPage.swift in Sources */,
+				AAE1617F2A4563AC00938C0C /* numericCollectionView.swift in Sources */,
 				AADAEBF12A402A750004F3EF /* mainPage.swift in Sources */,
 				AA472AC92A4411B900A547F9 /* TypesCollectionView.swift in Sources */,
 			);

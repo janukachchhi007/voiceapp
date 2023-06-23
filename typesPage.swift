@@ -47,15 +47,15 @@ class typesPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
-        if colour[indexPath.row].nameColour == rendomColour.nameColour{
-            
-            rendomColour = colour.randomElement()!
-            
-        }
-        else
+        if indexPath.row == 0
         {
-            rendomColour = colour.randomElement()!
-            
+            let naviget = storyboard?.instantiateViewController(withIdentifier: "mainPage") as! mainPage
+            navigationController?.pushViewController(naviget, animated: true)
+        }
+        else if indexPath.row == 1
+        {
+            let naviget = storyboard?.instantiateViewController(withIdentifier: "NumericPage") as! NumericPage
+            navigationController?.pushViewController(naviget, animated: true)
         }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

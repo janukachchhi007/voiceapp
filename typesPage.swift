@@ -57,6 +57,11 @@ class typesPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
             let naviget = storyboard?.instantiateViewController(withIdentifier: "NumericPage") as! NumericPage
             navigationController?.pushViewController(naviget, animated: true)
         }
+        else if indexPath.row == 2
+        {
+            let naviget = storyboard?.instantiateViewController(withIdentifier: "colourPage") as! colourPage
+            navigationController?.pushViewController(naviget, animated: true)
+        }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 158, height: 184)

@@ -58,8 +58,18 @@ class typesPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
             navigationController?.pushViewController(naviget, animated: true)
         }
         else if indexPath.row == 2
+               {
+                   let naviget = storyboard?.instantiateViewController(withIdentifier: "colourPage") as! colourPage
+                   navigationController?.pushViewController(naviget, animated: true)
+               }
+        else if indexPath.row == 3
         {
-            let naviget = storyboard?.instantiateViewController(withIdentifier: "colourPage") as! colourPage
+            let naviget = storyboard?.instantiateViewController(withIdentifier: "shapesPage") as! shapesPage
+            navigationController?.pushViewController(naviget, animated: true)
+        }
+        else if indexPath.row == 4
+        {
+            let naviget = storyboard?.instantiateViewController(withIdentifier: "animalPage") as! animalPage
             navigationController?.pushViewController(naviget, animated: true)
         }
     }

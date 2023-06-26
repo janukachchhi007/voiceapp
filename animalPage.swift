@@ -38,7 +38,7 @@ class animalPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         }
         else if indexPath.row == 1
         {
-            voice(voice: "Fox")
+            voice(voice: "fox")
         }
         else if indexPath.row == 2
         {
@@ -46,7 +46,7 @@ class animalPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         }
         else if indexPath.row == 3
         {
-            voice(voice: "Chimpanzee")
+            voice(voice: " Chimpanzee")
         }
         else if indexPath.row == 4
         {

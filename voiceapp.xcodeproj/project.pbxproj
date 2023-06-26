@@ -25,6 +25,8 @@
 		AAE1617F2A4563AC00938C0C /* numericCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1617E2A4563AC00938C0C /* numericCollectionView.swift */; };
 		AAE161812A45823500938C0C /* colourPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE161802A45823500938C0C /* colourPage.swift */; };
 		AAE161832A4584B200938C0C /* colourCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE161822A4584B200938C0C /* colourCollectionView.swift */; };
+		AAFD1CBD2A4954AE00076BBF /* birdsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD1CBC2A4954AE00076BBF /* birdsPage.swift */; };
+		AAFD1CBF2A4957C100076BBF /* birdsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD1CBE2A4957C100076BBF /* birdsCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		AAE1617E2A4563AC00938C0C /* numericCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numericCollectionView.swift; sourceTree = "<group>"; };
 		AAE161802A45823500938C0C /* colourPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colourPage.swift; sourceTree = "<group>"; };
 		AAE161822A4584B200938C0C /* colourCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colourCollectionView.swift; sourceTree = "<group>"; };
+		AAFD1CBC2A4954AE00076BBF /* birdsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birdsPage.swift; sourceTree = "<group>"; };
+		AAFD1CBE2A4957C100076BBF /* birdsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birdsCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		AADAEBD02A4022820004F3EF = {
 			isa = PBXGroup;
 			children = (
+				AAFD1CBC2A4954AE00076BBF /* birdsPage.swift */,
 				AA50759C2A46BF4C0046AB15 /* animalPage.swift */,
 				AA50759A2A46B6E70046AB15 /* shapesCollectionView.swift */,
 				AA5075982A46AFE30046AB15 /* shapesPage.swift */,
@@ -90,6 +95,7 @@
 				AADAEBDE2A4022820004F3EF /* SceneDelegate.swift */,
 				AADAEBE02A4022820004F3EF /* ViewController.swift */,
 				AADAEBE22A4022820004F3EF /* Main.storyboard */,
+				AAFD1CBE2A4957C100076BBF /* birdsCollectionView.swift */,
 				AA50759E2A46C1250046AB15 /* animalCollectionView.swift */,
 				AAE161822A4584B200938C0C /* colourCollectionView.swift */,
 				AAE1617E2A4563AC00938C0C /* numericCollectionView.swift */,
@@ -185,7 +191,9 @@
 				AA50759F2A46C1250046AB15 /* animalCollectionView.swift in Sources */,
 				AAE1617D2A45632400938C0C /* NumericPage.swift in Sources */,
 				AA472AC72A44089100A547F9 /* typesPage.swift in Sources */,
+				AAFD1CBD2A4954AE00076BBF /* birdsPage.swift in Sources */,
 				AA5075992A46AFE30046AB15 /* shapesPage.swift in Sources */,
+				AAFD1CBF2A4957C100076BBF /* birdsCollectionView.swift in Sources */,
 				AAE1617F2A4563AC00938C0C /* numericCollectionView.swift in Sources */,
 				AADAEBF12A402A750004F3EF /* mainPage.swift in Sources */,
 				AA472AC92A4411B900A547F9 /* TypesCollectionView.swift in Sources */,

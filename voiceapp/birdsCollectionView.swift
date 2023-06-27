@@ -9,4 +9,6 @@ import UIKit
 
 class birdsCollectionView: UICollectionViewCell {
     
+    @IBOutlet weak var nlabel: UILabel!
+    @IBOutlet weak var img: UIImageView!
 }

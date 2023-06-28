@@ -51,131 +51,128 @@ class birdsPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         {
             voice(voice: "crow")
         }
+        
         else if indexPath.row == 4
-        {
-            voice(voice: "Chipmunk")
-        }
-        else if indexPath.row == 5
         {
             voice(voice: "duck")
         }
-        else if indexPath.row == 6
+        else if indexPath.row == 5
         {
             voice(voice: "eagle")
         }
-        else if indexPath.row == 7
+        else if indexPath.row == 6
         {
             voice(voice: "hen")
         }
-        else if indexPath.row == 8
+        else if indexPath.row == 7
         {
             voice(voice: "kingfusher")
         }
-        else if indexPath.row == 9
+        else if indexPath.row == 8
         {
             voice(voice: "macaw")
         }
-        else if indexPath.row == 10
+        else if indexPath.row == 9
         {
             voice(voice: "pigen")
         }
-        else if indexPath.row == 11
+        else if indexPath.row == 10
         {
             voice(voice: "sparrow")
         }
-        else if indexPath.row == 12
+        else if indexPath.row == 11
         {
             voice(voice: "bee eater")
         }
-        else if indexPath.row == 13
+        else if indexPath.row == 12
         {
             voice(voice: "canary")
         }
-        else if indexPath.row == 14
+        else if indexPath.row == 13
         {
             voice(voice: "cormorant")
         }
-        else if indexPath.row == 15
+        else if indexPath.row == 14
         {
             voice(voice: "ceane bird")
         }
-        else if indexPath.row == 16
+        else if indexPath.row == 15
         {
             voice(voice: "flamingo")
         }
-        else if indexPath.row == 17
+        else if indexPath.row == 16
         {
             voice(voice: "goldfinch")
         }
-        else if indexPath.row == 18
+        else if indexPath.row == 17
         {
             voice(voice: "hawk")
         }
-        else if indexPath.row == 19
+        else if indexPath.row == 18
         {
             voice(voice: "hoopoe")
         }
-        else if indexPath.row == 20
+        else if indexPath.row == 19
         {
             voice(voice: "kestrel")
         }
-        else if indexPath.row == 21
+        else if indexPath.row == 20
         {
             voice(voice: "kite bird")
         }
-        else if indexPath.row == 22
+        else if indexPath.row == 21
         {
             voice(voice: "koel")
         }
-        else if indexPath.row == 23
+        else if indexPath.row == 22
         {
             voice(voice: "myna")
         }
-        else if indexPath.row == 24
+        else if indexPath.row == 23
         {
             voice(voice: "nightingale")
         }
-        else if indexPath.row == 25
+        else if indexPath.row == 24
         {
             voice(voice: "ostrich")
         }
-        else if indexPath.row == 26
+        else if indexPath.row == 25
         {
             voice(voice: "owl")
         }
-        else if indexPath.row == 27
+        else if indexPath.row == 26
         {
             voice(voice: "parrot")
         }
-        else if indexPath.row == 28
+        else if indexPath.row == 27
         {
             voice(voice: "peacock")
         }
-        else if indexPath.row == 29
+        else if indexPath.row == 28
         {
             voice(voice:"pelican")
         }
-        else if indexPath.row == 30
+        else if indexPath.row == 29
         {
             voice(voice: "penguin")
         }
-        else if indexPath.row == 31
+        else if indexPath.row == 30
         {
             voice(voice:"quail")
         }
-        else if indexPath.row == 32
+        else if indexPath.row == 31
         {
             voice(voice:"robin")
         }
-        else if indexPath.row == 33
+        else if indexPath.row == 32
         {
             voice(voice: "seagull")
         }
-        else if indexPath.row == 34
+        else if indexPath.row == 33
         {
             voice(voice: "starling")
         }
-        else if indexPath.row == 35
+        else if indexPath.row == 34
         {
             voice(voice: "swan")
         }

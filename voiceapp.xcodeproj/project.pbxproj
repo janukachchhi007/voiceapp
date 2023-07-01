@@ -113,6 +113,7 @@
 		AA593B2D2A500704000564BC /* animalPAge */ = {
 			isa = PBXGroup;
 			children = (
+				AA593B2A2A5006C8000564BC /* numericPage */,
 				AA50759C2A46BF4C0046AB15 /* animalPage.swift */,
 				AA50759E2A46C1250046AB15 /* animalCollectionView.swift */,
 			);
@@ -157,7 +158,6 @@
 				AADAEBDE2A4022820004F3EF /* SceneDelegate.swift */,
 				AADAEBE02A4022820004F3EF /* ViewController.swift */,
 				AADAEBE22A4022820004F3EF /* Main.storyboard */,
-				AA593B2A2A5006C8000564BC /* numericPage */,
 				AADAEBE52A4022830004F3EF /* Assets.xcassets */,
 				AADAEBE72A4022830004F3EF /* LaunchScreen.storyboard */,
 				AADAEBEA2A4022830004F3EF /* Info.plist */,

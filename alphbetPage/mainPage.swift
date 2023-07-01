@@ -152,7 +152,7 @@ extension mainPage: UICollectionViewDataSource,UICollectionViewDelegate,UICollec
         myVoice.rate = 0.3
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 190, height: 230)
+        return CGSize(width: 160, height: 250)
     }
 }
 

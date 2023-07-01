@@ -33,6 +33,8 @@ extension animalPage: UICollectionViewDelegate,UICollectionViewDataSource,UIColl
         cell.nLabel.text = animalName[indexPath.row]
         cell.layer.borderWidth = 3
         cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

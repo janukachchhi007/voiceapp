@@ -39,13 +39,13 @@ extension colourPage: UICollectionViewDelegate,UICollectionViewDataSource,UIColl
         cell.layer.borderColor = UIColor.black.cgColor
         if rendomColour == colour[indexPath.row]
         {
-          
+            
             cell.layer.backgroundColor = colour[indexPath.row].cgColor
         }
         else
         {
             
-          cell.layer.backgroundColor = colour[indexPath.row].cgColor
+            cell.layer.backgroundColor = colour[indexPath.row].cgColor
             
         }
         return cell

@@ -31,7 +31,6 @@ class ViewController: UIViewController {
             {
                 self.naviget()
                 self.time.invalidate()
-                
             }
         })
     }

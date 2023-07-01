@@ -10,7 +10,7 @@ import AVFoundation
 
 
 class birdsPage: UIViewController{
-   
+    
     @IBOutlet weak var cv: UICollectionView!
     let  synth = AVSpeechSynthesizer()
     var bird = [UIImage(named: "bulbul"),UIImage(named: "chipmunk"),UIImage(named: "cock"),UIImage(named: "crow"),UIImage(named: "duck"),UIImage(named: "eagle"),UIImage(named: "hen"),UIImage(named: "kingfisher"),UIImage(named: "macaw"),UIImage(named: "pigeon"),UIImage(named: "sparrow"),UIImage(named: "bee eater"),UIImage(named: "canary"),UIImage(named: "cormorant"),UIImage(named: "crane bird"),UIImage(named: "flamingo"),UIImage(named: "goldfinch"),UIImage(named: "hawk"),UIImage(named: "hoopoe"),UIImage(named: "kestrel"),UIImage(named: "kite bird"),UIImage(named: "koel"),UIImage(named: "myna"),UIImage(named: "nightingale"),UIImage(named: "ostrich"),UIImage(named: "owl"),UIImage(named: "parrot"),UIImage(named: "peacock"),UIImage(named: "pelican"),UIImage(named: "penguin"),UIImage(named: "quail"),UIImage(named: "robin"),UIImage(named: "seagull"),UIImage(named: "starling"),UIImage(named: "swan")]
@@ -18,7 +18,7 @@ class birdsPage: UIViewController{
     ["bulbul","chipmunk","cock","crow","duck","eagle","hen","kingfusher","macaw","pigen","sparrow","bee eater","canary","cormorant","ceane bird","flamingo","goldfinch","hawk","hoopoe","kestrel","kite bird","koel","myna","nightingale","ostrich","owl","parrot","peacock","pelican","penguin","quail","robin","seagull","starling","swan"]
     override func viewDidLoad() {
         super.viewDidLoad()
-   }
+    }
 }
 //MARK = COLLECTIONVIEW
 extension birdsPage: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
@@ -26,13 +26,15 @@ extension birdsPage: UICollectionViewDelegate,UICollectionViewDataSource,UIColle
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return bird.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!  birdsCollectionView
         cell.img.image = bird[indexPath.row]
         cell.nlabel.text = birdName[indexPath.row]
         cell.layer.borderWidth = 3
         cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
         return cell
         
     }

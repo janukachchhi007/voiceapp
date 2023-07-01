@@ -9,6 +9,7 @@ import UIKit
 
 class CollectionView1: UICollectionViewCell {
     
+    @IBOutlet weak var AlphbetName: UILabel!
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 }

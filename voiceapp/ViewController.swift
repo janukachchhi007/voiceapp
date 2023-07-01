@@ -21,9 +21,6 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
-    
     @IBAction func playButtonAction(_ sender: Any) {
         var a : Float = 0.0
         self.progressBar.progress = a

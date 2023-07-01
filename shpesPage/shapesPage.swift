@@ -9,19 +9,21 @@ import UIKit
 import AVFoundation
 
 
-class shapesPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class shapesPage: UIViewController{
    
-    
-
     @IBOutlet weak var cv: UICollectionView!
     let  synth = AVSpeechSynthesizer()
 
     var image = [UIImage(named: "circle"),UIImage(named: "squre"),UIImage(named: "rectangle"),UIImage(named: "semicircle"),UIImage(named: "star"),UIImage(named: "heart"),UIImage(named: "triangle"),UIImage(named: "trape")]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
     }
+ 
+}
+//MARK = COLLECTIONVIEW
+
+extension shapesPage: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
+{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return image.count
     }
@@ -29,6 +31,8 @@ class shapesPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!  shapesCollectionView
         cell.img.image = image[indexPath.row]
+        cell.layer.borderWidth = 3
+        cell.layer.borderColor = UIColor.black.cgColor
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

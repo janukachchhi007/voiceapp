@@ -9,11 +9,9 @@ import UIKit
 import AVFoundation
 
 
-class NumericPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class NumericPage: UIViewController{
     
     let  synth = AVSpeechSynthesizer()
-    var rendomColour = UIColor()
-    var colour  = [UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue,UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white,UIColor.blue]
     var number = ["1","2","3","4","5","6","7","8","9","10",
                   "11","12","13","14","15","16","17","18","19","20",
                   "21","22","23","24","25","26","27","28","29","30",
@@ -28,8 +26,13 @@ class NumericPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     @IBOutlet weak var cv: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        rendomColour = colour.randomElement()!
     }
+    
+}
+//MARK = COLLECTIONVIEW
+
+extension NumericPage: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
+{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return number.count
     }
@@ -147,7 +150,7 @@ class NumericPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         }
         else if indexPath.row == 28
         {
-           voice(voice:  "twenty Nine")
+            voice(voice:  "twenty Nine")
         }
         else if indexPath.row == 29
         {
@@ -397,51 +400,51 @@ class NumericPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         {
             voice(voice: "Ninety One")
         }
-                  else if indexPath.row == 91
-                  {
-                      voice(voice: "Ninety")
-                  }
-                  else if indexPath.row == 92
-                  {
-                      voice(voice: "Ninety one")
-                  }
-                  else if indexPath.row == 93
-                  {
-                      voice(voice: "Ninety two")
-                  }
-                  else if indexPath.row == 94
-                  {
-                      voice(voice: "Ninety three")
-                  }
-                  else if indexPath.row == 95
-                  {
-                      voice(voice: "Ninety four")
-                  }
-                  else if indexPath.row == 96
-                  {
-                      voice(voice: "Ninety five")
-                  }
-                  else if indexPath.row == 97
-                  {
-                      voice(voice: "Ninety six")
-                  }
-                  else if indexPath.row == 98
-                  {
-                      voice(voice: "Ninety seven")
-                  }
-                  else if indexPath.row == 99
-                  {
-                      voice(voice: "Ninety eight")
-                  }
-                  else if indexPath.row == 100
-                  {
-                      voice(voice: "Ninety nine")
-                  }
-                  else if indexPath.row == 101
-                  {
-                      voice(voice: "handred")
-                  }
-    
+        else if indexPath.row == 91
+        {
+            voice(voice: "Ninety")
+        }
+        else if indexPath.row == 92
+        {
+            voice(voice: "Ninety one")
+        }
+        else if indexPath.row == 93
+        {
+            voice(voice: "Ninety two")
+        }
+        else if indexPath.row == 94
+        {
+            voice(voice: "Ninety three")
+        }
+        else if indexPath.row == 95
+        {
+            voice(voice: "Ninety four")
+        }
+        else if indexPath.row == 96
+        {
+            voice(voice: "Ninety five")
+        }
+        else if indexPath.row == 97
+        {
+            voice(voice: "Ninety six")
+        }
+        else if indexPath.row == 98
+        {
+            voice(voice: "Ninety seven")
+        }
+        else if indexPath.row == 99
+        {
+            voice(voice: "Ninety eight")
+        }
+        else if indexPath.row == 100
+        {
+            voice(voice: "Ninety nine")
+        }
+        else if indexPath.row == 101
+        {
+            voice(voice: "handred")
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -451,18 +454,9 @@ class NumericPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         cell.numberNameLAbel.text = name[indexPath.row]
         cell.layer.cornerRadius = 20
         cell.layer.masksToBounds = true
+        cell.layer.borderWidth = 3
+        cell.layer.borderColor = UIColor.black.cgColor
         
-        if rendomColour == colour[indexPath.row]
-        {
-            cell.numberLabel.textColor = UIColor(named: "colour[indexPath.row]")
-//            cell.layer.backgroundColor = colour[indexPath.row].cgColor
-        }
-        else
-        {
-            
-          cell.layer.backgroundColor = colour[indexPath.row].cgColor
-            
-        }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -473,24 +467,5 @@ class NumericPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         var myVoice = AVSpeechUtterance(string: voice)
         synth.speak(myVoice)
         myVoice.rate = 0.3
-    }
-}
-extension UIColor {
-    var lbcolour : String{
-        switch self{
-            
-        case UIColor.yellow : return "yellow"
-        case UIColor.brown : return"Brown"
-        case UIColor.cyan : return "Cyan"
-        case UIColor.red : return "red"
-        case UIColor.gray : return "Gray"
-        case UIColor.green : return "Green"
-        case UIColor.purple : return "Purple"
-        case UIColor.orange : return "Orange"
-        case UIColor.white : return "white"
-        default:
-            break
-        }
-        return ""
     }
 }

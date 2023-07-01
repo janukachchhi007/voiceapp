@@ -9,10 +9,8 @@ import UIKit
 import AVFoundation
 
 
-class colourPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class colourPage: UIViewController{
     
-    
-
     @IBOutlet weak var cv: UICollectionView!
     let  synth = AVSpeechSynthesizer()
     var rendomColour = UIColor()
@@ -21,8 +19,12 @@ class colourPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         rendomColour = colour.randomElement()!
-
     }
+}
+//MARK = COLLECTIONVIEW
+
+extension colourPage: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
+{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cName.count
     }
@@ -33,6 +35,8 @@ class colourPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         cell.backgroundColor = .blue
         cell.layer.cornerRadius = 20
         cell.layer.masksToBounds = true
+        cell.layer.borderWidth = 3
+        cell.layer.borderColor = UIColor.black.cgColor
         if rendomColour == colour[indexPath.row]
         {
           
@@ -96,6 +100,7 @@ class colourPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         myVoice.rate = 0.3
     }
 }
+//MARK = COLOUR 
 extension UIColor {
     var cname : String{
         switch self{
@@ -115,4 +120,5 @@ extension UIColor {
         return ""
     }
 }
+
 

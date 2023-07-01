@@ -8,18 +8,22 @@
 import UIKit
 import AVFoundation
 
-class mainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class mainPage: UIViewController {
     
     let  synth = AVSpeechSynthesizer()
     var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    var alphabetName = ["Apple","Ball","Cat","Dog","Elephant","Fish","Gen","Horse","Ice-Creme","Jug","Kite","Lion","Monkey","Neast","Orange","Parrot","Queen","Rose","Sun","Tiger","Umbrella","Van","Watch","X-Tree","Yark","Zibra"]
     var image = [UIImage(named: "a"),UIImage(named: "b"),UIImage(named: "c"),UIImage(named: "d"),UIImage(named: "e"),UIImage(named: "f"),UIImage(named: "g"),UIImage(named: "h"),UIImage(named: "i"),UIImage(named: "j"),UIImage(named: "k"),UIImage(named: "l"),UIImage(named: "m"),UIImage(named: "n"),UIImage(named: "o"),UIImage(named: "p"),UIImage(named: "q"),UIImage(named: "r"),UIImage(named: "s"),UIImage(named: "t"),UIImage(named: "u"),UIImage(named: "v"),UIImage(named: "w"),UIImage(named: "x"),UIImage(named: "y"),UIImage(named: "z")]
     
     @IBOutlet weak var cv: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
+}
+//MARK = COLLECTIONVIEW
+
+extension mainPage: UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout
+{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return alphabet.count
     }
@@ -28,8 +32,11 @@ class mainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
         let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionView1
         cell.nameLabel.text = alphabet[indexPath.row]
         cell.img.image = image[indexPath.row]
+        cell.AlphbetName.text = alphabetName[indexPath.row]
         cell.layer.cornerRadius = 20
         cell.layer.masksToBounds = true
+        cell.layer.borderWidth = 3
+        cell.layer.borderColor = UIColor.black.cgColor
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -137,7 +144,6 @@ class mainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
         {
             voice(voice: "Z for zebra")
         }
-        
     }
     func voice(voice:String)
     {
@@ -146,6 +152,8 @@ class mainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
         myVoice.rate = 0.3
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 160, height: 195)
+        return CGSize(width: 190, height: 230)
     }
 }
+
+

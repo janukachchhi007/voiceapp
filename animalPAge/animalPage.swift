@@ -9,18 +9,20 @@ import UIKit
 import AVFoundation
 
 
-class animalPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-   
-
+class animalPage: UIViewController{
+    
     @IBOutlet weak var cv: UICollectionView!
     let  synth = AVSpeechSynthesizer()
     var animal = [UIImage(named: "giraffe"),UIImage(named: "fox"),UIImage(named: "tiger"),UIImage(named: "chimpanzee"),UIImage(named: "chipmunk"),UIImage(named: "camel"),UIImage(named: "lion"),UIImage(named: "deer"),UIImage(named: "monkey"),UIImage(named: "elephant"),UIImage(named: "rat"),UIImage(named: "horse"),UIImage(named: "kangaroo"),UIImage(named: "leopard"),UIImage(named: "hippopotamus"),UIImage(named: "sheep"),UIImage(named: "panda"),UIImage(named: "rabbit"),UIImage(named: "zebra"),UIImage(named: "wolf")]
     var animalName = ["Giraffe","Fox","Tiger","Chimpanzee","Chipmunk","Camel","Lion","Deer","Monkey","Elephant","Rat","Horse","Kangaroo","Leopard","Hippopotamus","Sheep","Panda","Rabbit","Zebra","Wolf"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
     }
+}
+//MARK = COLLECTIONVIEW
+
+extension animalPage: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
+{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return animal.count
     }
@@ -29,6 +31,8 @@ class animalPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!  animalCollectionView
         cell.img.image = animal[indexPath.row]
         cell.nLabel.text = animalName[indexPath.row]
+        cell.layer.borderWidth = 3
+        cell.layer.borderColor = UIColor.black.cgColor
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -86,7 +90,7 @@ class animalPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         }
         else if indexPath.row == 13
         {
-                voice(voice: "Leopard" )
+            voice(voice: "Leopard" )
         }
         else if indexPath.row == 14
         {
@@ -122,6 +126,4 @@ class animalPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         synth.speak(myVoice)
         myVoice.rate = 0.3
     }
-    
-
 }

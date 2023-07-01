@@ -65,16 +65,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AADAEBD02A4022820004F3EF = {
+		AA593B282A500634000564BC /* typesPage */ = {
+			isa = PBXGroup;
+			children = (
+				AA472AC82A4411B900A547F9 /* TypesCollectionView.swift */,
+				AA472AC62A44089100A547F9 /* typesPage.swift */,
+			);
+			path = typesPage;
+			sourceTree = "<group>";
+		};
+		AA593B292A500668000564BC /* alphbetPage */ = {
+			isa = PBXGroup;
+			children = (
+				AADAEBF02A402A750004F3EF /* mainPage.swift */,
+				AADAEBF22A402B3B0004F3EF /* CollectionView1.swift */,
+			);
+			path = alphbetPage;
+			sourceTree = "<group>";
+		};
+		AA593B2A2A5006C8000564BC /* numericPage */ = {
+			isa = PBXGroup;
+			children = (
+				AAE1617E2A4563AC00938C0C /* numericCollectionView.swift */,
+				AAE1617C2A45632400938C0C /* NumericPage.swift */,
+			);
+			path = numericPage;
+			sourceTree = "<group>";
+		};
+		AA593B2B2A5006E5000564BC /* colouePAge */ = {
+			isa = PBXGroup;
+			children = (
+				AAE161822A4584B200938C0C /* colourCollectionView.swift */,
+				AAE161802A45823500938C0C /* colourPage.swift */,
+			);
+			path = colouePAge;
+			sourceTree = "<group>";
+		};
+		AA593B2C2A5006F6000564BC /* shpesPage */ = {
+			isa = PBXGroup;
+			children = (
+				AA5075982A46AFE30046AB15 /* shapesPage.swift */,
+				AA50759A2A46B6E70046AB15 /* shapesCollectionView.swift */,
+			);
+			path = shpesPage;
+			sourceTree = "<group>";
+		};
+		AA593B2D2A500704000564BC /* animalPAge */ = {
+			isa = PBXGroup;
+			children = (
+				AA50759C2A46BF4C0046AB15 /* animalPage.swift */,
+				AA50759E2A46C1250046AB15 /* animalCollectionView.swift */,
+			);
+			path = animalPAge;
+			sourceTree = "<group>";
+		};
+		AA593B2E2A500731000564BC /* birdsPage */ = {
 			isa = PBXGroup;
 			children = (
 				AAFD1CBC2A4954AE00076BBF /* birdsPage.swift */,
-				AA50759C2A46BF4C0046AB15 /* animalPage.swift */,
-				AA50759A2A46B6E70046AB15 /* shapesCollectionView.swift */,
-				AA5075982A46AFE30046AB15 /* shapesPage.swift */,
-				AAE161802A45823500938C0C /* colourPage.swift */,
-				AA472AC62A44089100A547F9 /* typesPage.swift */,
-				AADAEBF02A402A750004F3EF /* mainPage.swift */,
+				AAFD1CBE2A4957C100076BBF /* birdsCollectionView.swift */,
+			);
+			path = birdsPage;
+			sourceTree = "<group>";
+		};
+		AADAEBD02A4022820004F3EF = {
+			isa = PBXGroup;
+			children = (
+				AA593B2E2A500731000564BC /* birdsPage */,
+				AA593B2B2A5006E5000564BC /* colouePAge */,
+				AA593B2D2A500704000564BC /* animalPAge */,
+				AA593B2C2A5006F6000564BC /* shpesPage */,
+				AA593B282A500634000564BC /* typesPage */,
+				AA593B292A500668000564BC /* alphbetPage */,
 				AADAEBDB2A4022820004F3EF /* voiceapp */,
 				AADAEBDA2A4022820004F3EF /* Products */,
 			);
@@ -95,13 +157,7 @@
 				AADAEBDE2A4022820004F3EF /* SceneDelegate.swift */,
 				AADAEBE02A4022820004F3EF /* ViewController.swift */,
 				AADAEBE22A4022820004F3EF /* Main.storyboard */,
-				AAFD1CBE2A4957C100076BBF /* birdsCollectionView.swift */,
-				AA50759E2A46C1250046AB15 /* animalCollectionView.swift */,
-				AAE161822A4584B200938C0C /* colourCollectionView.swift */,
-				AAE1617E2A4563AC00938C0C /* numericCollectionView.swift */,
-				AAE1617C2A45632400938C0C /* NumericPage.swift */,
-				AA472AC82A4411B900A547F9 /* TypesCollectionView.swift */,
-				AADAEBF22A402B3B0004F3EF /* CollectionView1.swift */,
+				AA593B2A2A5006C8000564BC /* numericPage */,
 				AADAEBE52A4022830004F3EF /* Assets.xcassets */,
 				AADAEBE72A4022830004F3EF /* LaunchScreen.storyboard */,
 				AADAEBEA2A4022830004F3EF /* Info.plist */,
